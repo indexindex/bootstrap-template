@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap template</title>
+
+<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>Bootstrap</h1>
+    <p class="Treesfont">Layout Template</p>
+  </div>
+</div>
+
+<!-- The navigation menu -->
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Section 1</a>
+  <a href="#"><i class="fas fa-project-diagram"></i> Section 2</a>
+  <a href="#"><i class="fas fa-photo-video"></i> Section 3</a>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <img src="Pictures/LOGO-sidenav.png" class="logo" alt="LOGO">
+  <a href="#">Text</a>
+  <a href="#">Text</a>
+  <a href="#">Text</a>
+</div>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  <span onclick="openNav()">&#9776; Bonus</span>
+</div>
+
+<a href="javascript:" id="return-to-bottom" onclick="arrowdown()"><i class="icon-chevron-down"></i></a>
+
+<script type="text/javascript">arrowdown();</script>
+
+<div class="grid-wrapper">
+
+<!-- Carousel 1-->
+<div class="container mt-3">
+    
+    <p class="description">My personal unique logo that i designed for my nickname- zippelgazz.<br />
+    It comes in two different ways, either fox is on top or bottom-right
+    </p>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ul>
+    
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Pictures/Fox-top.jpg" alt="Top" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="Pictures/Fox-bottom-right.jpg" alt="Bottom-right" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="Pictures/Fox.jpg" alt="Fox" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="Pictures/zippelgazz.jpg" alt="zippelgazz" width="1100" height="500">
+        </div>
+      </div>
+    
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <i class="fas fa-chevron-left" style="font-size:20px;color:black"></i>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <i class="fas fa-chevron-right" style="font-size:20px;color:black"></i>
+      </a>
+    </div>
+
+<!-- Carousel 2-->
+<p class="description">I have also designed an album fully from cover to inner section, with CD included.<br />
+    This album design got printed and is now in use by this rock-band.
+    </p>
+    <div id="myCarousel2" class="carousel">
+    
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+          <img src="Pictures/Trükk - Album.jpg" alt="Albumprint">
+      </div>
+    </div>
+
+<!-- Carousel 3-->
+<p class="description">Album look after it got printed.</p>
+<div id="myCarousel3" class="carousel slide" data-ride="carousel" style="max-width: 800px; max-height:800px">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel3" data-slide-to="1"></li>
+    <li data-target="#myCarousel3" data-slide-to="2"></li>
+	<li data-target="#myCarousel3" data-slide-to="3"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Pictures/real1.jpg" alt="real1">
+    </div>
+    <div class="carousel-item">
+      <img src="Pictures/real2.jpg" alt="real2">
+    </div>
+    <div class="carousel-item">
+      <img src="Pictures/real3.jpg" alt="real3">
+    </div>
+	<div class="carousel-item">
+      <img src="Pictures/real4.jpg" alt="real4">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel3" data-slide="prev">
+	  <i class="fas fa-chevron-left" style="font-size:20px;color:black"></i>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel3" data-slide="next">
+    <i class="fas fa-chevron-right" style="font-size:20px;color:black"></i>
+  </a>
+</div>
+
+<!-- Carousel 4-->
+<p class="description">Background and logo that symbolise green nature were made specifically<br />
+    to suit the style and look of this web design.
+    </p>
+    <div id="myCarousel4" class="carousel slide" data-ride="carousel" style="max-width: 1200px; max-height:600px">
+    
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#myCarousel4" data-slide-to="0" class="active2"></li>
+        <li data-target="#myCarousel4" data-slide-to="1" class="active2"></li>
+      </ul>
+    
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Pictures/Full-size.png" alt="poster">
+          </div>
+          <div class="carousel-item">
+            <img src="Pictures/LOGO.png" alt="poster">
+          </div>
+    
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#myCarousel4" data-slide="prev">
+        <i class="fas fa-chevron-left" style="font-size:20px;color:white"></i>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel4" data-slide="next">
+        <i class="fas fa-chevron-right" style="font-size:20px;color:white"></i>
+      </a>
+    </div>
+    
+    </div>
+    
+    <!-- Carousel 5-->
+    <p class="description">Here I show my logo and mock-up design, where logo features weasel and a group name- MS 18,<br />
+    and mock-up with gear and clothing that are featuring the logo.<br />
+    Additions where- business cards and company blanket.
+    </p>
+    
+      <div id="myCarousel5" class="carousel slide" data-ride="carousel" style="max-width: 620px; max-height:877px; margin: 0 auto">
+      
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel5" data-slide-to="1" class="active"></li>
+          <li data-target="#myCarousel5" data-slide-to="2" class="active"></li>
+          <li data-target="#myCarousel5" data-slide-to="3" class="active"></li>
+          <li data-target="#myCarousel5" data-slide-to="4" class="active"></li>
+          <li data-target="#myCarousel5" data-slide-to="5" class="active"></li>
+          <li data-target="#myCarousel5" data-slide-to="6" class="active"></li>
+          <li data-target="#myCarousel5" data-slide-to="7" class="active"></li>
+        </ul>
+      
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Pictures/Esimene pool1.png" alt="poster">
+            </div>
+            <div class="carousel-item">
+              <img src="Pictures/Esimene pool2.png" alt="poster">
+            </div>
+            <div class="carousel-item">
+              <img src="Pictures/Esimene pool3.png" alt="poster">
+            </div>
+            <div class="carousel-item">
+              <img src="Pictures/Esimene pool4.png" alt="poster">
+            </div>
+            <div class="carousel-item">
+              <img src="Pictures/Esimene pool5.png" alt="poster">
+            </div>
+            <div class="carousel-item">
+              <img src="Pictures/Esimene pool6.png" alt="poster">
+            </div>
+            <div class="carousel-item">
+              <img src="Pictures/Esimene pool7.png" alt="poster">
+            </div>
+            <div class="carousel-item">
+              <img src="Pictures/Esitlusplanšett.png" alt="poster">
+            </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel5" data-slide="prev">
+          <i class="fas fa-chevron-left" style="font-size:20px;color:black"></i>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel5" data-slide="next">
+          <i class="fas fa-chevron-right" style="font-size:20px;color:black"></i>
+        </a>
+      </div>
+    </div>
+</div>  <!-- container close -->
+
+</div>  <!-- grid-wrapper close -->
+
+<!-- Font Awesome icons -->
+<script src="https://kit.fontawesome.com/dbdca94052.js" crossorigin="anonymous"></script>
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+<a href="javascript:" id="return-to-top" onclick="arrow()"><i class="icon-chevron-up"></i></a>
+
+<script src="script.js"></script>
+
+<script type="text/javascript">arrow();</script>
+
+<!-- Footer -->
+<footer class="page-footer font-small success-color pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-center">
+
+      <!-- Grid column --><!-- Also, col-md-15 is responsible for moving content right or left, depending on the number -->
+      <div class="col-md-15 mb-md-0 mb-3">
+
+        <ul class="list-unstyled">
+		  <li>
+            <img src="Pictures/zippelgazzW.png" width="177" height="57" class="zippelgazz" alt="zippelgazzW logo">
+          </li>
+          <li>
+            <a href="#"><img src="Pictures/Facebook.png" width="64" height="64" class="facebook" alt="Facebook logo"></a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#"> zippelgazz.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+</body>
+</html>
